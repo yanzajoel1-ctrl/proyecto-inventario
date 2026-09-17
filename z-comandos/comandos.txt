@@ -1,0 +1,35 @@
+RUTA: 
+cd C:\proyecto_inventario\backend
+php artisan serve
+
+
+
+
+
+PS C:\proyecto_inventario\backend> php artisan make:model Product -m
+
+INFO  Model [C:\proyecto_inventario\backend\app\Models\Product.php] created successfully.  
+backend> notepad database\migrations\2026_09_16_022440_create_products_table.php
+PS C:\proyecto_inventario\backend> notepad database\migrations\2026_09_16_022440_create_products_table.php
+PS C:\proyecto_inventario\backend>
+
+
+
+
+
+                                   php artisan migrate
+
+   INFO  Running migrations.
+
+  2026_09_16_022440_create_products_table ......... 32.84ms DONE
+_cache_table ................. [1] Ran
+  0001_01_01_000002_create_jobs_table .................. [1] Ran  
+  2026_09_16_022440_create_products_table .............. [2] Ran  
+
+PS C:\proyecto_inventario\backend>
+
+controller ProductController --api
+
+   INFO  Controller [C:\proyecto_inventario\backend\app\Http\Controllers\ProductController.php] created successfully.
+
+PS C:\proyecto_inventario\backend>
