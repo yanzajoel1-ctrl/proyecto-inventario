@@ -40,3 +40,12 @@ juan@example.com
 
 Contraseña:
 12345678
+
+//Guardar en Git Hub 
+cd C:\proyecto_inventario
+git status
+git add .
+git status
+git commit -m "feat: completar autenticacion y CRUD de productos"
+git push origin master
+git status

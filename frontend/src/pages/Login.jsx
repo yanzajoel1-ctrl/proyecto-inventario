@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import API_URL from '../services/api';
+import '../App.css';
 
 function Login() {
     const navigate = useNavigate();
@@ -44,40 +45,63 @@ function Login() {
     };
 
     return (
-        <div>
-            <h1>Sistema de Inventario</h1>
+        <div className="login-container">
 
-            <h2>Inicio de Sesión</h2>
+            <div className="login-card">
 
-            <form onSubmit={handleLogin}>
-                <div>
-                    <label htmlFor="email">Correo electrónico</label>
-                    <input
-                        id="email"
-                        type="email"
-                        placeholder="Ingrese su correo"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
+                <h1>Sistema de Inventario</h1>
 
-                <div>
-                    <label htmlFor="password">Contraseña</label>
-                    <input
-                        id="password"
-                        type="password"
-                        placeholder="Ingrese su contraseña"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
+                <h2>Inicio de Sesión</h2>
 
-                <button type="submit">
-                    Ingresar
-                </button>
+                <form className="login-form" onSubmit={handleLogin}>
 
-                {error && <p>{error}</p>}
-            </form>
+                    <div className="form-group">
+                        <label htmlFor="email">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="Ingrese su correo"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="password">
+                            Contraseña
+                        </label>
+
+                        <input
+                            id="password"
+                            type="password"
+                            placeholder="Ingrese su contraseña"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+
+                    <button
+                        className="login-button"
+                        type="submit"
+                    >
+                        Ingresar
+                    </button>
+
+                    {error && (
+                        <p className="error-message">
+                            {error}
+                        </p>
+                    )}
+
+                </form>
+
+            </div>
+
         </div>
     );
 }
