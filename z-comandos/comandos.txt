@@ -11,11 +11,7 @@ PS C:\proyecto_inventario\backend> php artisan make:model Product -m
 INFO  Model [C:\proyecto_inventario\backend\app\Models\Product.php] created successfully.  
 backend> notepad database\migrations\2026_09_16_022440_create_products_table.php
 PS C:\proyecto_inventario\backend> notepad database\migrations\2026_09_16_022440_create_products_table.php
-PS C:\proyecto_inventario\backend>
-
-
-
-
+PS C:\proyecto_inventario\backend
 
                                    php artisan migrate
 
@@ -32,4 +28,15 @@ controller ProductController --api
 
    INFO  Controller [C:\proyecto_inventario\backend\app\Http\Controllers\ProductController.php] created successfully.
 
-PS C:\proyecto_inventario\backend>
+cd C:\proyecto_inventario\frontend
+
+//Encender frontend
+npm run dev
+
+
+//Ingresos
+Correo:
+juan@example.com
+
+Contraseña:
+12345678
